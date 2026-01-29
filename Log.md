@@ -32,3 +32,21 @@
 - **Algorithm:** **Kadane's Algorithm** (Dynamic Programming).
 - **Logic:** Iterated through the array while maintaining a `prev_sum`. If adding the current number increases the sum vs starting fresh, extend the subarray; otherwise, reset.
 - **Complexity:** Time $O(N)$ | Space $O(1)$
+
+---
+### Day 3: 29 January 2026
+---
+**Focus:** Linked Lists, System Internals & JS OOP
+
+**1. DSA Practice**
+- **Solved:**
+  - **Max Ice Cream Bars (LC #1833):** Used Greedy approach with Sorting.
+  - **Add Two Numbers (LC #2):** Used **Dummy Head** to handle edge cases.
+  - **Add Two Numbers II (LC #445):** Solved by **Reversing Lists** to handle addition from LSB.
+
+**2. Core Concepts**
+- **OS & Systems:** Studied **API vs ABI**, **POSIX** standards, and **ELF** format.
+- **Android:** Learned why Android uses **DVM/ART** (.dex files) instead of the standard JVM.
+
+**3. Web Development**
+- **JavaScript:** Learned ES6 **Classes**, **Objects**, and the `super` keyword for inheritance.
