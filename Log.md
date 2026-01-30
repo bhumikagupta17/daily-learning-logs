@@ -50,3 +50,16 @@
 
 **3. Web Development**
 - **JavaScript:** Learned ES6 **Classes**, **Objects**, and the `super` keyword for inheritance.
+
+---
+### Day 4: 30 January 2026
+---
+**Focus:** Two-Pointer Technique (Arrays & Linked Lists)
+**DSA Practice**
+#### **Solved 4 Problems:**
+- **Remove Duplicates (LC #26) & Remove Element (LC #27):**
+  - **Pattern:** Mastered in-place **Two Pointer** technique to modify arrays without extra space ($O(1)$).
+- **Delete Middle Node (LC #2095):**
+  - **Algorithm:** Used **Tortoise & Hare** (Slow/Fast pointers) to locate and remove the middle node in a single pass.
+- **Remove Elements (LC #203):**
+  - **Logic:** Filtered nodes using a **Dummy Head** to handle edge cases where the head itself needs removal.
