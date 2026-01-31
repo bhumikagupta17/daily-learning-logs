@@ -64,9 +64,9 @@
 - **Remove Elements (LC #203):**
   - **Logic:** Filtered nodes using a **Dummy Head** to handle edge cases where the head itself needs removal.
 
-  ---
-  ### Day 5: 31 January 2026
-  ---
+---
+### Day 5: 31 January 2026
+---
 **Focus:** Linked List Manipulation & Asynchronous JavaScript
 
 **1. DSA Practice**
