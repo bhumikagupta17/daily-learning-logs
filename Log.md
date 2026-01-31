@@ -63,3 +63,21 @@
   - **Algorithm:** Used **Tortoise & Hare** (Slow/Fast pointers) to locate and remove the middle node in a single pass.
 - **Remove Elements (LC #203):**
   - **Logic:** Filtered nodes using a **Dummy Head** to handle edge cases where the head itself needs removal.
+
+  ---
+  ### Day 5: 31 January 2026
+  ---
+**Focus:** Linked List Manipulation & Asynchronous JavaScript
+
+**1. DSA Practice**
+- **Insert GCD in Linked List (LC #2807):**
+  - **Logic:** Used Euclidean Algorithm for GCD. Iterated through the list to insert new nodes between pairs.
+  - **Complexity:** Time $O(N)$ | Space $O(N)$ (Current solution).
+  - **Optimization Note:** Recognized that space can be improved to **$O(1)$** by inserting nodes directly into the existing list (In-Place) instead of creating a new dummy list.
+
+**2. Web Development (JavaScript)**
+- **Asynchronous Programming:**
+ - **Callbacks:** Understood the base concept of passing functions as arguments.
+ - **Callback Hell:** Learned why deeply nested callbacks are hard to read and debug.
+ - **Promises:** Studied how to handle async operations more cleanly (`.then()`, `.catch()`).
+ - **Async/Await:** Learned the modern syntactic sugar to write asynchronous code that looks synchronous.
