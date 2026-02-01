@@ -81,3 +81,29 @@
  - **Callback Hell:** Learned why deeply nested callbacks are hard to read and debug.
  - **Promises:** Studied how to handle async operations more cleanly (`.then()`, `.catch()`).
  - **Async/Await:** Learned the modern syntactic sugar to write asynchronous code that looks synchronous.
+
+---
+### Day 6: 01 February 2026
+---
+
+**Focus:** Fetch API, Hashing & Array Logic
+
+**1. Web Development (JavaScript)**
+- **Network Requests:**
+  - **Fetch API:** Learned how to make HTTP requests to servers (`fetch(url)`).
+  - **Request & Response:** Understood how to handle incoming data (JSON parsing) and HTTP status codes.
+
+**2. DSA Practice**
+- **Concepts:**
+  - **Hashing & Maps:** Studied Key-Value pairs for efficient $O(1)$ lookups and frequency counting.
+
+- **Find Smallest Letter (LC #744):**
+  - **Approach:** Linear Scan.
+  - **Logic:** Iterated through the sorted array to find the first character strictly greater than the target.
+  - **Optimization Note:** Since the array is **sorted**, this can be optimized to **Binary Search** ($O(\log N)$) using `std::upper_bound` in C++.
+  - **Complexity:** Time $O(N)$ (Current) vs $O(\log N)$ (Optimal).
+
+- **Divide Array for Min Cost (LC #3010):**
+  - **Approach:** **Greedy Strategy**.
+  - **Logic:** Since the first element `nums[0]` is mandatory, I simply found the **two smallest** integers in the remaining array to minimize the total sum.
+  - **Complexity:** Time $O(N)$ (Single pass to find mins) | Space $O(1)$.
