@@ -108,9 +108,9 @@
   - **Logic:** Since the first element `nums[0]` is mandatory, I simply found the **two smallest** integers in the remaining array to minimize the total sum.
   - **Complexity:** Time $O(N)$ (Single pass to find mins) | Space $O(1)$.
 
-  ---
-  ### Day 7: 02 February 2026
-  ---
+---
+### Day 7: 02 February 2026
+---
 **Focus:** Operating System Fundamentals (Theory)
 
 **CS Fundamentals (OS)**
