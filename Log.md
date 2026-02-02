@@ -107,3 +107,15 @@
   - **Approach:** **Greedy Strategy**.
   - **Logic:** Since the first element `nums[0]` is mandatory, I simply found the **two smallest** integers in the remaining array to minimize the total sum.
   - **Complexity:** Time $O(N)$ (Single pass to find mins) | Space $O(1)$.
+
+  ---
+  ### Day 7: 02 February 2026
+  ---
+**Focus:** Operating System Fundamentals (Theory)
+
+**CS Fundamentals (OS)**
+- **Introduction:** Understood the Operating System as a **Resource Manager** and the interface between User/Software and Hardware.
+- **Key Concepts:**
+  - **Kernel vs. Shell:** Learned that the **Kernel** is the core program managing hardware, while the **Shell** is the interface for users to command the OS.
+  - **Modes of Operation:** Studied the difference between **User Mode** (restricted access) and **Kernel Mode** (privileged access).
+  - **System Calls:** Learned how programs request services from the Kernel (e.g., reading a file or creating a process).
