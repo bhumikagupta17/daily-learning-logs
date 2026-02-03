@@ -119,3 +119,33 @@
   - **Kernel vs. Shell:** Learned that the **Kernel** is the core program managing hardware, while the **Shell** is the interface for users to command the OS.
   - **Modes of Operation:** Studied the difference between **User Mode** (restricted access) and **Kernel Mode** (privileged access).
   - **System Calls:** Learned how programs request services from the Kernel (e.g., reading a file or creating a process).
+ 
+---
+### Day 8: Feb 03, 2026
+---
+  
+**Focus:** OS Fundamentals & Array Algorithms
+
+**1. Operating Systems (Theory)**
+- **Core Concepts:** Studied **Degree of Multiprogramming** (maximizing CPU utility) and **OS Classes** (Batch, Time-Sharing, Real-Time).
+- **Booting:** Learned the **Boot Sequence** flow: BIOS/UEFI $\rightarrow$ MBR $\rightarrow$ Bootloader $\rightarrow$ Kernel.
+- **History:** Traced the evolution from serial processing to modern mobile architectures.
+
+**2. DSA Practice (Arrays)**
+- **Minimum Size Subarray Sum (LC #209):**
+  - **Pattern:** **Variable Sliding Window**.
+  - **Logic:** Dynamically adjusted window size to find the minimal length matching the target sum ($O(N)$).
+
+- **Next Permutation (LC #31):**
+  - **Algorithm:** **Lexicographical Generation**.
+  - **Optimization Note:** Currently using `sort()` for the suffix ($O(N \log N)$). Noted that `reverse()` can be used instead to achieve strict **$O(N)$** time since the suffix is already descending.
+
+- **Rearrange Array by Sign (LC #2149):**
+  - **Approach:** **Two Pointers (Constructive)**.
+  - **Performance Gains:**
+    - **Runtime:** Reduced from **13ms** to **3ms** (significant speedup).
+    - **Memory:** Achieved a significant reduction in **Space Complexity** through better memory access patterns.
+
+- **Leaders in an Array:**
+  - **Approach:** **Suffix Max**.
+  - **Logic:** Iterated **Right-to-Left** keeping track of the `max_so_far`. If current $>$ max, it is a leader.
