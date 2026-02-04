@@ -149,3 +149,14 @@
 - **Leaders in an Array:**
   - **Approach:** **Suffix Max**.
   - **Logic:** Iterated **Right-to-Left** keeping track of the `max_so_far`. If current $>$ max, it is a leader.
+---
+### Day 9: 4 February 2026
+---
+**Focus:** Sequence Algorithms
+
+**DSA Practice**
+- **Longest Consecutive Sequence (LC #128):**
+  - **Approach:** Sorting & Linear Scan.
+  - **Logic:** Sorted the array and tracked sequences by comparing adjacent elements, handling duplicates with a `continue` check.
+  - **Complexity:** Time $O(N \log N)$ | Space $O(1)$.
+  - **Optimization:** Identified an **$O(N)$** approach using `std::unordered_set` to replace sorting with hash-based lookups.
