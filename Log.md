@@ -160,3 +160,14 @@
   - **Logic:** Sorted the array and tracked sequences by comparing adjacent elements, handling duplicates with a `continue` check.
   - **Complexity:** Time $O(N \log N)$ | Space $O(1)$.
   - **Optimization:** Identified an **$O(N)$** approach using `std::unordered_set` to replace sorting with hash-based lookups.
+---
+### Day 10: 5 February 2026
+---
+**Focus:** Matrix Algorithms & Space Optimization
+
+**DSA Practice**
+- **Set Matrix Zeroes (LC #73):**
+  - **Approach:** **Optimal In-Place** ($O(1)$ Space).
+  - **Logic:** Used the **first row** and **first column** as flag arrays to mark rows/cols that need to be zeroed.
+  - **Edge Case:** Maintained a separate variable `col0` to handle the overlap at `matrix[0][0]`, preventing the first row's status from corrupting the first column's status.
+  - **Complexity:** Time $O(N \times M)$ | Space $O(1)$.
