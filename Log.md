@@ -171,3 +171,15 @@
   - **Logic:** Used the **first row** and **first column** as flag arrays to mark rows/cols that need to be zeroed.
   - **Edge Case:** Maintained a separate variable `col0` to handle the overlap at `matrix[0][0]`, preventing the first row's status from corrupting the first column's status.
   - **Complexity:** Time $O(N \times M)$ | Space $O(1)$.
+---
+### Day 11: 6 February 2026
+---
+**Focus:** Arrays & Hashing (Prefix Sum)
+
+**DSA Practice**
+- **Subarray Sum Equals K (LC #560):**
+  - **Approach:** **Prefix Sum + HashMap**.
+  - **Logic:** Used the formula `CurrentPrefixSum - k = PreviousPrefixSum` to find valid subarrays.
+  - **Technique:** Used a Hash Map to store the frequency of past prefix sums for $O(1)$ lookups.
+  - **Edge Case:** Initialized `map[0] = 1` to handle subarrays starting from index 0.
+  - **Complexity:** Time $O(N)$ | Space $O(N)$.
