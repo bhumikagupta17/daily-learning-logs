@@ -183,3 +183,41 @@
   - **Technique:** Used a Hash Map to store the frequency of past prefix sums for $O(1)$ lookups.
   - **Edge Case:** Initialized `map[0] = 1` to handle subarrays starting from index 0.
   - **Complexity:** Time $O(N)$ | Space $O(N)$.
+---
+### Day 12: 9 February 2026
+---
+**Focus:** Frontend Development (CSS Frameworks)
+
+**Web Development**
+- **Tailwind CSS:**
+  - **Core Concepts:** Learned the **Utility-First** workflow to style components directly in HTML.
+  - **Layouts:** Mastered Flexbox (`flex`, `justify-`, `items-`) and Grid (`grid`, `gap-`) utilities.
+  - **Responsiveness:** Understood mobile-first breakpoints (`sm`, `md`, `lg`) and state variants (`hover:`, `focus:`).
+  - **Customization:** Learned how to configure `tailwind.config.js` for custom themes.
+
+---
+### Day 13: 10 February 2026
+---
+**Focus:** CS Fundamentals (OS & Networks)
+
+**1. Computer Networks (CN)**
+- **Architecture:**
+  - **OSI Model:** Deep dive into the 7 layers (Physical to Application) and their specific functions.
+  - **Topologies:** Star, Mesh, Bus, and Ring architectures.
+  - **Transmission:** Simplex, Half-Duplex, and Full-Duplex modes.
+- **Data Communication:**
+  - **Signal Metrics:** Studied **Signal-to-Noise Ratio (SNR)** and its impact on data capacity.
+  - **Line Coding (Digital-to-Digital):**
+    - **Unipolar:** Simple NRZ.
+    - **Polar:** NRZ-L, NRZ-I, and RZ (Return to Zero).
+    - **Biphase:** Manchester and Differential Manchester.
+    - **Bipolar:** AMI (Alternate Mark Inversion).
+
+**2. Operating Systems (OS)**
+- **System Structure:**
+  - **System Calls:** The interface between User Mode and Kernel Mode.
+  - **OS Structures:** Monolithic vs. Microkernel architectures.
+- **Process Management:**
+  - **Process Life Cycle:** New $\rightarrow$ Ready $\rightarrow$ Running $\rightarrow$ Waiting $\rightarrow$ Terminated.
+  - **PCB:** Understood the **Process Control Block** (PID, Program Counter, Registers).
+  - **Scheduling:** Basics of how the OS selects processes for the CPU (Context Switching).
