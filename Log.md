@@ -221,3 +221,22 @@
   - **Process Life Cycle:** New $\rightarrow$ Ready $\rightarrow$ Running $\rightarrow$ Waiting $\rightarrow$ Terminated.
   - **PCB:** Understood the **Process Control Block** (PID, Program Counter, Registers).
   - **Scheduling:** Basics of how the OS selects processes for the CPU (Context Switching).
+---
+### Day 14: 11 February 2026
+---
+**Focus:** Advanced Voting Algorithms & OS Process Management
+
+**1. DSA Practice**
+- **Majority Element II (LC #229):**
+  - **Approach:** **Extended Boyer-Moore Voting Algorithm**.
+  - **Logic:** Maintained **two candidates** and **two counters** since there can be at most two elements appearing more than $\lfloor N/3 \rfloor$ times.
+  - **Complexity:** Time $O(N)$ (Two passes: one to find candidates, one to verify) | Space $O(1)$.
+
+**2. Operating Systems (Process Control)**
+- **Scheduling & Execution:**
+  - **Schedulers:** Studied the roles of Long-term (Job), Short-term (CPU), and Medium-term (Swapping) schedulers.
+  - **Context Switch:** Learned how the OS saves the **PCB** (Process Control Block) of the running process and loads the PCB of the next process.
+  - **System Calls:** Understood `fork()` to create child processes (where the child gets a copy of the parent's address space).
+- **Inter-Process Communication (IPC):**
+  - **Shared Memory:** Processes communicate by reading/writing to a common memory block (Faster, but requires synchronization).
+  - **Message Passing:** Processes communicate by sending packets via the kernel (Easier to implement, but slower due to system calls).
