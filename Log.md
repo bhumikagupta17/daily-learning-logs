@@ -240,3 +240,20 @@
 - **Inter-Process Communication (IPC):**
   - **Shared Memory:** Processes communicate by reading/writing to a common memory block (Faster, but requires synchronization).
   - **Message Passing:** Processes communicate by sending packets via the kernel (Easier to implement, but slower due to system calls).
+---
+### Day 15: 12 February 2026
+---
+**Focus:** Interval Manipulation & Bitwise Algorithms
+
+**DSA Practice**
+- **Merge Intervals (LC #56):**
+  - **Pattern:** **Sorting + Linear Scan**.
+  - **Logic:** Sorted intervals by start time. Iterated through the list, merging overlapping intervals whenever `current.start <= last_merged.end`.
+  - **Complexity:** Time $O(N \log N)$ (Dominated by sorting) | Space $O(N)$ (Result storage).
+
+- **Count Subarrays with XOR K:**
+  - **Pattern:** **Prefix XOR + HashMap**.
+  - **Logic:** relied on the property that if `PrefixXOR[i] ^ PrefixXOR[j] = K`, then `PrefixXOR[i] ^ K = PrefixXOR[j]`.
+  - **Algorithm:** Maintained a running `xr` (prefix XOR). For every element, checked if `xr ^ k` existed in the map. If yes, added its frequency to the count.
+  - **Edge Case:** Initialized `map[0] = 1` to handle subarrays starting from index 0.
+  - **Complexity:** Time $O(N)$ | Space $O(N)$.
