@@ -257,3 +257,15 @@
   - **Algorithm:** Maintained a running `xr` (prefix XOR). For every element, checked if `xr ^ k` existed in the map. If yes, added its frequency to the count.
   - **Edge Case:** Initialized `map[0] = 1` to handle subarrays starting from index 0.
   - **Complexity:** Time $O(N)$ | Space $O(N)$.
+---
+### Day 16: 22 February 2026
+---
+**Focus:** Frontend Development (React Fundamentals)
+
+**Web Development (React)**
+- **Props (Properties):**
+  - **Data Flow:** Learned how to pass data dynamically from Parent to Child components.
+  - **Immutability:** Understood that props are **read-only** (cannot be modified by the child), ensuring predictable data flow and highly reusable UI components.
+- **React Hooks:**
+  - **Concept:** Explored how hooks allow functional components to "hook into" React's state and lifecycle features without needing class components.
+  - **State Management:** Looked into how state variables (like `useState`) trigger UI re-renders whenever the data changes.
