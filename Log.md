@@ -269,3 +269,22 @@
 - **React Hooks:**
   - **Concept:** Explored how hooks allow functional components to "hook into" React's state and lifecycle features without needing class components.
   - **State Management:** Looked into how state variables (like `useState`) trigger UI re-renders whenever the data changes.
+---
+### Day 17: 23 February 2026
+---
+**Focus:** Advanced React Hooks & Optimal Array Merging
+
+**1. Web Development (React)**
+- **Advanced Hooks:**
+  - **`useEffect`:** Learned how to synchronize a component with external systems (API calls, timers) and control re-renders using the dependency array.
+  - **`useRef`:** Persisted mutable data across renders without triggering a re-render, and learned how to directly access DOM nodes.
+  - **`useCallback`:** Optimized performance by memoizing functions, preventing unnecessary re-renders when passing callbacks as props down to child components.
+
+**2. DSA Practice (Arrays)**
+- **Merge Two Sorted Arrays (Without Extra Space):**
+  - **Approach 1: Two Pointers & Swap**
+    - **Logic:** Placed pointers at the end of `arr1` and start of `arr2`. Swapped elements if `arr1[i] > arr2[j]`, then sorted both arrays to restore their internal order.
+    - **Complexity:** Time $O(N \log N + M \log M)$ | Space $O(1)$.
+  - **Approach 2: The Gap Method (Optimal)**
+    - **Logic:** Applied the intuition of **Shell Sort**. Calculated an initial `gap = ceil((N+M)/2)` to compare and swap elements across the boundary of both arrays. Continually halved the gap until it reached 0.
+    - **Complexity:** Time $O((N+M) \log(N+M))$ | Space $O(1)$.
