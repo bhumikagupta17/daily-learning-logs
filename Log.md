@@ -288,3 +288,24 @@
   - **Approach 2: The Gap Method (Optimal)**
     - **Logic:** Applied the intuition of **Shell Sort**. Calculated an initial `gap = ceil((N+M)/2)` to compare and swap elements across the boundary of both arrays. Continually halved the gap until it reached 0.
     - **Complexity:** Time $O((N+M) \log(N+M))$ | Space $O(1)$.
+---
+### Day 18: 28 February 2026
+---
+**Focus:** Mobile App Deployment & Advanced Divide and Conquer
+
+**1. App Development (Flutter)**
+- **Subscription Tracker App:**
+  - **Milestone:** Successfully completed the core development of the mobile app.
+  - **Implementation:** Finalized the UI/UX and ensured state management flows correctly across all screens.
+
+**2. DSA Practice (Divide & Conquer)**
+- **Count Inversions:**
+  - **Approach:** Modified **Merge Sort**.
+  - **Logic:** While merging two sorted halves, if `left[i] > right[j]`, then all remaining elements in the left half are also strictly greater than `right[j]`. Added `(mid - i + 1)` to the inversion count.
+  - **Complexity:** Time $O(N \log N)$ | Space $O(N)$.
+
+- **Reverse Pairs (LC #493):**
+  - **Approach:** Advanced **Merge Sort** application.
+  - **Logic:** Counted pairs where `i < j` and `nums[i] > 2 * nums[j]`. 
+  - **Crucial Step:** Performed the counting step *before* the standard merge process. Used a two-pointer approach across the left and right halves to efficiently count valid pairs without disrupting the sorting algorithm.
+  - **Complexity:** Time $O(N \log N)$ | Space $O(N)$.
