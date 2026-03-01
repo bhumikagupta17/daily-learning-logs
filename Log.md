@@ -309,3 +309,23 @@
   - **Logic:** Counted pairs where `i < j` and `nums[i] > 2 * nums[j]`. 
   - **Crucial Step:** Performed the counting step *before* the standard merge process. Used a two-pointer approach across the left and right halves to efficiently count valid pairs without disrupting the sorting algorithm.
   - **Complexity:** Time $O(N \log N)$ | Space $O(N)$.
+---
+### Day 19: 01 March 2026
+---
+**Focus:** Subarray Optimization, Greedy Logic & Sorting Fundamentals
+
+**1. DSA Practice (LeetCode)**
+- **Maximum Product Subarray (LC #152):**
+  - **Approach:** **Prefix and Suffix Product** (or modified Kadane's).
+  - **Logic:** Because multiplying two negative numbers yields a positive result, tracking just the maximum isn't enough. Maintained both a running prefix product (left-to-right) and suffix product (right-to-left), resetting to 1 when encountering a 0. The global max of these is the answer.
+  - **Complexity:** Time $O(N)$ | Space $O(1)$.
+
+- **Partitioning Into Minimum Number Of Deci-Binary Numbers (LC #1689):**
+  - **Approach:** **Greedy / String Iteration**.
+  - **Logic:** Recognized the mathematical trick: a deci-binary number only consists of 0s and 1s. Therefore, the minimum number of partitions required to sum up to the target string is simply equal to the **maximum digit** present in the string.
+  - **Complexity:** Time $O(N)$ (where N is string length) | Space $O(1)$.
+
+**2. Core CS Revision**
+- **Sorting Algorithms (Divide & Conquer):**
+  - **Merge Sort:** Revised the stable $O(N \log N)$ approach that requires $O(N)$ extra space for the temporary merge array.
+  - **Quick Sort:** Revised the in-place partitioning logic (using a pivot). Noted that while the average case is $O(N \log N)$, the worst-case time complexity degrades to $O(N^2)$ if the pivot choices are poor (e.g., already sorted array with end-element pivot).
