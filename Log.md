@@ -351,3 +351,16 @@
   - **Data Fetching (`useLoaderData`):** - Explored the modern React Router v6.4+ data APIs.
     - Understood how `loader` functions allow you to fetch data *before* the route renders, preventing the "loading spinner" waterfall effect.
     - Used the `useLoaderData` hook inside the component to access the pre-fetched data.
+---
+### Day 21: 03 March 2026
+---
+**Focus:** Recursion & Divide and Conquer
+
+**DSA Practice**
+- **Find Kth Bit in Nth Binary String (LC #1545 - DCC):**
+  - **Approach:** **Recursion / Pattern Observation**.
+  - **Logic:** Recognized that generating the full string ($S_n = S_{n-1} + "1" + \text{reverse}(\text{invert}(S_{n-1}))$) takes too much memory. Instead, used the property that the length is $2^n - 1$ and the middle bit is always '1'.
+  - **Algorithm:** 1. If $k$ is exactly in the middle ($k = 2^{n-1}$), return '1'.
+    2. If $k$ is in the left half ($k < 2^{n-1}$), recursively search in $S_{n-1}$.
+    3. If $k$ is in the right half ($k > 2^{n-1}$), find its mirrored position in the left half, recursively search, and **invert** the result.
+  - **Complexity:** Time $O(N)$ (Only making $N$ recursive calls) | Space $O(N)$ (Call stack).
