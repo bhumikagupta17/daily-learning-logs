@@ -329,3 +329,25 @@
 - **Sorting Algorithms (Divide & Conquer):**
   - **Merge Sort:** Revised the stable $O(N \log N)$ approach that requires $O(N)$ extra space for the temporary merge array.
   - **Quick Sort:** Revised the in-place partitioning logic (using a pivot). Noted that while the average case is $O(N \log N)$, the worst-case time complexity degrades to $O(N^2)$ if the pivot choices are poor (e.g., already sorted array with end-element pivot).
+---
+### Day 20: 02 March 2026
+---
+**Focus:** Search Algorithms, Matrix Grids & React Routing
+
+**1. DSA Practice**
+- **Binary Search (Revision):**
+  - **Core Logic:** Revised the standard $O(\log N)$ divide-and-conquer search on sorted arrays. 
+  - **Safety Check:** Reinforced using `mid = left + (right - left) / 2` to prevent integer overflow instead of `(left + right) / 2`.
+- **Minimum Swaps to Arrange a Binary Grid (LC #1536 - DCC):**
+  - **Approach:** **Greedy + Adjacent Swaps**.
+  - **Logic:** 1. Converted the matrix into a 1D array representing the number of **trailing zeros** in each row.
+    2. For each row `i`, the requirement is to have at least `n - 1 - i` trailing zeros.
+    3. Greedily searched for the closest valid row below `i` and simulated adjacent swaps to "bubble" it up to the current position.
+  - **Complexity:** Time $O(N^2)$ | Space $O(N)$.
+
+**2. Web Development (React)**
+- **React Router:**
+  - **Routing Fundamentals:** Learned how to implement client-side routing to navigate between pages without reloading the browser.
+  - **Data Fetching (`useLoaderData`):** - Explored the modern React Router v6.4+ data APIs.
+    - Understood how `loader` functions allow you to fetch data *before* the route renders, preventing the "loading spinner" waterfall effect.
+    - Used the `useLoaderData` hook inside the component to access the pre-fetched data.
