@@ -364,3 +364,22 @@
     2. If $k$ is in the left half ($k < 2^{n-1}$), recursively search in $S_{n-1}$.
     3. If $k$ is in the right half ($k > 2^{n-1}$), find its mirrored position in the left half, recursively search, and **invert** the result.
   - **Complexity:** Time $O(N)$ (Only making $N$ recursive calls) | Space $O(N)$ (Call stack).
+---
+### Day 22: 05 March 2026
+---
+**Focus:** String Optimization & Advanced Data Structures
+
+**1. DSA Practice (Strings)**
+- **Minimum Changes To Make Alternating Binary String (LC #1758):**
+  - **Approach:** **Pattern Matching & Math ($n - \text{count}$)**.
+  - **Logic:** Recognized that an alternating binary string can only take two forms: starting with '0' (`010101...`) or starting with '1' (`101010...`).
+  - **Optimization:** Instead of checking both patterns independently, calculated the differences against the '0'-starting pattern (`count`). The differences for the '1'-starting pattern is simply `n - count`. Returned $\min(\text{count}, n - \text{count})$.
+  - **Complexity:** Time $O(N)$ (Single Pass) | Space $O(1)$.
+
+**2. Advanced Data Structures (Heaps)**
+- **Binomial Heaps:**
+  - **Structure:** Learned that it is implemented as a collection (forest) of **Binomial Trees** (where a tree of order $k$ has exactly $2^k$ nodes).
+  - **Key Operations:**
+    - **Union/Merge:** The most critical operation. Merging two binomial heaps takes $O(\log N)$ time, which is significantly faster than standard binary heaps ($O(N)$).
+    - **Insert & Extract-Min:** Both operate in $O(\log N)$ time by linking trees of the same degree.
+  - **Use Case:** Highly efficient for priority queues where merging two queues frequently is a primary requirement.
