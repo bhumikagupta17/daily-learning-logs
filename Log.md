@@ -383,3 +383,23 @@
     - **Union/Merge:** The most critical operation. Merging two binomial heaps takes $O(\log N)$ time, which is significantly faster than standard binary heaps ($O(N)$).
     - **Insert & Extract-Min:** Both operate in $O(\log N)$ time by linking trees of the same degree.
   - **Use Case:** Highly efficient for priority queues where merging two queues frequently is a primary requirement.
+---
+### Day 23: 06 March 2026
+---
+**Focus:** String Validation & Advanced Priority Queues
+
+**1. DSA Practice (Strings)**
+- **Check if Binary String Has at Most One Segment of Ones (LC #1784):**
+  - **Approach:** **Pattern Matching / Substring Search**.
+  - **Logic:** The problem states the string never contains leading zeros (it always starts with '1'). Therefore, the *only* way to have more than one segment of '1's is if a '1' appears *after* a '0'. 
+  - **Optimization:** Instead of iterating and counting segments, simply checked if the substring `"01"` exists in the string. If `"01"` is found, return `false`; otherwise, return `true`.
+  - **Complexity:** Time $O(N)$ | Space $O(1)$.
+
+**2. Advanced Data Structures (Heaps)**
+- **Fibonacci Heaps:**
+  - **Structure:** A more relaxed collection of trees compared to Binomial Heaps, satisfying the min-heap property but allowing trees to be less rigidly structured.
+  - **Key Operations (Amortized Time):**
+    - **Insert, Find-Min, Union/Merge:** Extremely fast at $O(1)$.
+    - **Extract-Min & Delete:** $O(\log N)$.
+    - **Decrease-Key:** $O(1)$ amortized. (This is the defining feature that makes it vastly superior to Binary/Binomial heaps for certain algorithms).
+  - **Use Case:** The theoretical optimal choice for priority queues in dense graph algorithms, specifically heavily optimizing **Dijkstra's Shortest Path** and **Prim's Minimum Spanning Tree**.
