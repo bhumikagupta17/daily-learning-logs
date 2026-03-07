@@ -403,3 +403,32 @@
     - **Extract-Min & Delete:** $O(\log N)$.
     - **Decrease-Key:** $O(1)$ amortized. (This is the defining feature that makes it vastly superior to Binary/Binomial heaps for certain algorithms).
   - **Use Case:** The theoretical optimal choice for priority queues in dense graph algorithms, specifically heavily optimizing **Dijkstra's Shortest Path** and **Prim's Minimum Spanning Tree**.
+---
+### Day 24: 07 March 2026
+---
+**Focus:** Advanced Sliding Window, Balanced Trees & SWE Cost Models
+
+**1. DSA Practice (Strings & Arrays)**
+- **Minimum Number of Flips to Make the Binary String Alternating (LC #1888):**
+  - **Approach:** **Sliding Window on Doubled String**.
+  - **Logic:** The operation of removing the first character and appending it to the end is effectively a circular shift. To simulate this without modifying the array in $O(N^2)$ time, concatenated the string to itself (`s + s`).
+  - **Algorithm:** Generated two target alternating patterns (`0101...` and `1010...`) of length `2n`. Used a sliding window of size `n` over the doubled string to count mismatches against both patterns, tracking the minimum flips needed.
+  - **Complexity:** Time $O(N)$ | Space $O(N)$.
+
+**2. Advanced Data Structures**
+- **Red-Black (RB) Trees:**
+  - **Structure:** A self-balancing Binary Search Tree that guarantees $O(\log N)$ time for search, insert, and delete operations.
+  - **Core Properties:**
+    1. Every node is colored either Red or Black.
+    2. The Root is always Black.
+    3. No two adjacent nodes can be Red (a Red node cannot have a Red parent or Red child).
+    4. **Black-Height Property:** Every path from a node to its descendant NULL pointers contains the exact same number of Black nodes.
+  - **Rebalancing:** Handled via color flipping and Left/Right tree rotations.
+
+**3. Software Engineering Principles**
+- **COCOMO (Constructive Cost Model):**
+  - **Concept:** An algorithmic model used to estimate software project effort, cost, and schedule based on the size of the codebase (measured in KLOC - Kilo Lines of Code).
+  - **Project Categories:**
+    - **Organic:** Small teams, familiar environments, flexible requirements.
+    - **Semi-detached:** Medium-sized teams, mixed experience, moderate constraints.
+    - **Embedded:** Complex hardware/software systems with extremely strict constraints and high innovation requirements.
