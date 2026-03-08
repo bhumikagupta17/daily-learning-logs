@@ -432,3 +432,19 @@
     - **Organic:** Small teams, familiar environments, flexible requirements.
     - **Semi-detached:** Medium-sized teams, mixed experience, moderate constraints.
     - **Embedded:** Complex hardware/software systems with extremely strict constraints and high innovation requirements.
+---
+### Day 25: 08 March 2026
+---
+**Focus:** String Algorithms & DAA Exam Preparation
+
+**1. DSA Practice (Strings)**
+- **Find Unique Binary String (LC #1980):**
+  - **Approach:** **Cantor's Diagonalization**.
+  - **Logic:** Instead of generating all $2^N$ possible strings or using a Hash Set to find the missing one, constructed the missing string on the fly. Iterated through the given array of strings, taking the $i$-th character of the $i$-th string, and **flipped** it (if '0' make '1', if '1' make '0'). 
+  - **Result:** This guarantees the newly formed string differs from every existing string by at least one character.
+  - **Complexity:** Time $O(N)$ | Space $O(N)$ (to store the resulting string).
+
+**2. Core CS Revision**
+- **Design and Analysis of Algorithms (DAA):**
+  - Dedicated the day to revising core theoretical concepts for tomorrow's university exam.
+  - Focused on algorithmic paradigms, asymptotic complexity, and mathematical analysis of standard algorithms.
