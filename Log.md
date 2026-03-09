@@ -448,3 +448,20 @@
 - **Design and Analysis of Algorithms (DAA):**
   - Dedicated the day to revising core theoretical concepts for tomorrow's university exam.
   - Focused on algorithmic paradigms, asymptotic complexity, and mathematical analysis of standard algorithms.
+---
+### Day 26: 09 March 2026
+---
+**Focus:** 3D Dynamic Programming & OS Synchronization (Mid-Sem Prep)
+
+**1. DSA Practice (Dynamic Programming)**
+- **Find All Possible Stable Binary Arrays I (LC #3129):**
+  - **Approach:** **Multi-dimensional DP**.
+  - **Logic:** Maintained a 3D state `dp[i][j][last_bit]` representing the number of valid arrays using `i` zeros, `j` ones, and ending in `last_bit` (0 or 1). 
+  - **Constraint Handling:** To ensure no sequence of identical bits exceeds `limit`, the transition logic adds valid previous states and strictly subtracts the invalid configurations where consecutive bits surpass the boundary.
+  - **Complexity:** Time $O(\text{zero} \times \text{one})$ | Space $O(\text{zero} \times \text{one})$.
+
+**2. Core CS Revision (Operating Systems)**
+- **Process Synchronization:**
+  - **The Critical Section Problem:** Studied race conditions where multiple processes access shared resources concurrently. Learned the three strict requirements for a valid solution: Mutual Exclusion, Progress, and Bounded Waiting.
+  - **Synchronization Hardware & Software:** Revised Peterson's Solution (for two processes) and hardware instructions like `TestAndSet`.
+  - **Mutex & Semaphores:** Differentiated between Mutex (locking mechanism for mutual exclusion) and Semaphores (signaling mechanism using integer variables and `wait()`/`signal()` operations).
