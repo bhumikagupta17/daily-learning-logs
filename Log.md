@@ -465,3 +465,19 @@
   - **The Critical Section Problem:** Studied race conditions where multiple processes access shared resources concurrently. Learned the three strict requirements for a valid solution: Mutual Exclusion, Progress, and Bounded Waiting.
   - **Synchronization Hardware & Software:** Revised Peterson's Solution (for two processes) and hardware instructions like `TestAndSet`.
   - **Mutex & Semaphores:** Differentiated between Mutex (locking mechanism for mutual exclusion) and Semaphores (signaling mechanism using integer variables and `wait()`/`signal()` operations).
+---
+### Day 27: 10 March 2026
+---
+**Focus:** Advanced DP Optimization & SE Mid-Sem Exam
+
+**1. DSA Practice (Dynamic Programming)**
+- **Find All Possible Stable Binary Arrays II (LC #3130):**
+  - **Approach:** **Optimized 3D DP ($O(1)$ Transitions)**.
+  - **Logic:** Built upon the logic from Part I, but optimized the inner loop to handle the stricter constraints. Instead of iterating up to `limit` for each state, optimized the transition by taking the total valid combinations ending in the opposite bit, and subtracting only the specific configurations that just exceeded the `limit`.
+  - **Algorithm:** - `dp[i][j][0] = (dp[i-1][j][0] + dp[i-1][j][1]) % MOD`
+    - If `i > limit`, subtract the invalid state: `- dp[i - limit - 1][j][1]`
+  - **Complexity:** Time $O(\text{zero} \times \text{one})$ | Space $O(\text{zero} \times \text{one})$.
+
+**2. Core CS / Academics**
+- **Software Engineering (Mid-Semester Exam):**
+  - Successfully completed the SE mid-sem exam, testing knowledge on core Software Engineering principles, process models, decision tables, and cost estimation models (like COCOMO).
