@@ -481,3 +481,16 @@
 **2. Core CS / Academics**
 - **Software Engineering (Mid-Semester Exam):**
   - Successfully completed the SE mid-sem exam, testing knowledge on core Software Engineering principles, process models, decision tables, and cost estimation models (like COCOMO).
+---
+### Day 28: 11 March 2026
+---
+**Focus:** Bitwise Operations & Masking
+
+**DSA Practice**
+- **Complement of Base 10 Integer (LC #1009):**
+  - **Approach:** **Bitwise Masking & XOR**.
+  - **Logic:** The standard bitwise NOT operator (`~`) flips all 32 bits, which turns the leading zeros into ones (producing a negative number). To only flip the relevant bits, constructed a mask of all `1`s that is exactly the same bit-length as the number.
+  - **Algorithm:** 1. If `n == 0`, return `1` (edge case).
+    2. Found the bit length by shifting a mask left and adding 1 (`mask = (mask << 1) | 1`) until `mask` was greater than or equal to `n`.
+    3. Returned `n ^ mask` (XORing with all `1`s cleanly flips the target bits).
+  - **Complexity:** Time $O(\log N)$ (number of bits) | Space $O(1)$.
