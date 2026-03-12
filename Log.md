@@ -494,3 +494,15 @@
     2. Found the bit length by shifting a mask left and adding 1 (`mask = (mask << 1) | 1`) until `mask` was greater than or equal to `n`.
     3. Returned `n ^ mask` (XORing with all `1`s cleanly flips the target bits).
   - **Complexity:** Time $O(\log N)$ (number of bits) | Space $O(1)$.
+ ---
+### Day 29: 12 March 2026
+---
+**Focus:** Computer Networks Mid-Semester Exam Preparation
+
+**Core CS / Academics**
+- **Computer Networks (CN) Revision:**
+  - **OSI Architecture:** Reviewed the responsibilities of all 7 layers, focusing on data flow from Physical (bits) up to Application (data).
+  - **Physical Layer Concepts:** - Revised transmission modes (Simplex, Half/Full-Duplex) and network topologies (Star, Mesh, Bus, Ring).
+    - Solidified Data Communication metrics, specifically Signal-to-Noise Ratio (SNR) and its effect on channel capacity.
+  - **Encoding & Decoding Schemes:** - Reviewed Digital-to-Digital conversion techniques.
+    - Contrasted Unipolar, Polar (NRZ-L, NRZ-I, RZ), Biphase (Manchester, Differential Manchester), and Bipolar (AMI) schemes, focusing on clock synchronization and DC components.
